@@ -70,8 +70,9 @@ def linkid_creation(cmd):
     if l == None:
         link = c.Link(str(cmd[1]), float(cmd[3]), int(cmd[5]), int(cmd[7]))
         lList.add(link)
+        print("{} link is ADDED".format(str(cmd[1])))
     else:
-        print("LinkId {} already exists ...".format(str(cmd[0])))
+        print("LinkId {} already exists ...".format(str(cmd[1])))
         pass
 
 def link_endpoint_add(cmd):
@@ -99,6 +100,14 @@ def  link_cost_add(cmd):
         print("LinkId: {} DOES NOT EXIST...".format(cmd[1]))
     else:
         l.add_cost(str(cmd[3]), float(cmd[5]), float(cmd[7]))
+
+def link_latency_add(cmd):
+    # get the link by its id; if it does not exist, then ignore the command
+    l = lList.get(cmd[1])
+    if l == None:
+        print("LinkId: {} DOES NOT EXIST...".format(cmd[1]))
+    else:
+        l.add_latency(str(cmd[2]))
 
 
 def process_line(l):
@@ -129,6 +138,9 @@ def process_line(l):
 
     elif cmd[0] == "link_cost":
         link_cost_add(cmd)
+    
+    elif cmd[0] == "link_latency":
+        link_latency_add(cmd)
 
     else:
         print("Command: {} NOT KNOWN".format(cmd[0]))
@@ -155,6 +167,7 @@ def main():
             "deviceList": dList.to_json(),
             "linkList": lList.to_json()
             },indent=4))
+    print("Devices Length: {}; LinkList Length: {}".format(len(dList.devices), len(lList.links)))
 
 if __name__ == '__main__':
     main()

@@ -87,7 +87,7 @@ class DevicesList:
 
     def find(self, id):
         print("id: {}".format(str(id)))
-        print("Length Devices: {}".format(len(self.devices)))
+        #print("Length Devices: {}".format(len(self.devices)))
         for i, d in enumerate(self.devices):
             print("[{}] -- deviceId: {}".format(i, d.device_id))
             if d.device_id == id:
@@ -134,6 +134,7 @@ class Link():
         self.costName = ""
         self.costValue = float(0)
         self.costAlg = float(0)
+        self.latency = float(0)
 
     def __repr__(self) -> str:
         return "{} {} {} {}".format(self.link_Id, self.energy_link, self.operational_status, self.fwd_dir)
@@ -151,6 +152,9 @@ class Link():
         self.costValue = cost_value
         self.costAlg = cost_algorithm
     
+    def add_latency(self, latency):
+        self.latency = latency
+    
     def to_json(self):
         return {"link_Id": self.link_Id,
                 "energy_link": self.energy_link,
@@ -159,7 +163,8 @@ class Link():
                 "forwarding_direction": self.fwd_dir,
                 "total-potential-capacity": {"total-size": {"value": self.total_potential_capacity, "unit": self.unit}}, 
                 "available-capacity": {"total-size": {"value": self.available_capacity, "unit": self.unit}}, 
-                "cost-characteristics": {"cost-name": self.costName, "cost-value": self.costValue, "cost-algorithm": self.costAlg}         
+                "cost-characteristics": {"cost-name": self.costName, "cost-value": self.costValue, "cost-algorithm": self.costAlg},
+                "latency_characteristics": {"fixed-latency-characteristics": self.latency}        
                 }
 
 
@@ -171,7 +176,7 @@ class LinkList():
         self.links.append(link)
 
     def get(self, id):
-        print("Check if linkid: {} is on the link list".format(id))
+        #print("Check if linkid: {} is on the link list".format(id))
         for l in self.links:
             if l.link_Id == id:
                 return l

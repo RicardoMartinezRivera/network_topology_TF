@@ -159,6 +159,633 @@
                 "cost-name": "linkcost",
                 "cost-value": 1.0,
                 "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R1-4_R4-1",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R1",
+                        "endpoint_uuid": "R1-4"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-1"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R1-3_R3-1",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R1",
+                        "endpoint_uuid": "R1-3"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R3",
+                        "endpoint_uuid": "R3-1"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R2-1_R1-2",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R2",
+                        "endpoint_uuid": "R2-1"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R1",
+                        "endpoint_uuid": "R1-2"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R2-4_R4-2",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R2",
+                        "endpoint_uuid": "R2-4"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-2"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R4-2_R2-4",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-2"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R2",
+                        "endpoint_uuid": "R2-4"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R4-1_R1-4",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-1"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R1",
+                        "endpoint_uuid": "R1-4"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R4-3_R3-4",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-3"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R3",
+                        "endpoint_uuid": "R4-4"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R4-5_R5-4",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-5"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R5",
+                        "endpoint_uuid": "R5-4"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R5-4_R4-5",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R5",
+                        "endpoint_uuid": "R5-4"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-5"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R5-3_R3-5",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R5",
+                        "endpoint_uuid": "R5-3"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R3",
+                        "endpoint_uuid": "R3-5"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R3-5_R5-3",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R3",
+                        "endpoint_uuid": "R3-5"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R5",
+                        "endpoint_uuid": "R5-3"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R3-4_R4-3",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R3",
+                        "endpoint_uuid": "R3-4"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-3"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
+            }
+        },
+        {
+            "link_Id": "R3-1_R1-3",
+            "energy_link": 0.6,
+            "operational_status": 2,
+            "link_endpoint_ids": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R3",
+                        "endpoint_uuid": "R3-1"
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R1",
+                        "endpoint_uuid": "R1-3"
+                    }
+                }
+            ],
+            "forwarding_direction": 1,
+            "total-potential-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "available-capacity": {
+                "total-size": {
+                    "value": 200.0,
+                    "unit": 5
+                }
+            },
+            "cost-characteristics": {
+                "cost-name": "linkcost",
+                "cost-value": 1.0,
+                "cost-algorithm": 0.0
+            },
+            "latency_characteristics": {
+                "fixed-latency-characteristics": "2.0"
             }
         }
     ]

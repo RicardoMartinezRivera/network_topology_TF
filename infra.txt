@@ -13,6 +13,7 @@ device_endpoint R1 R1-4 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8
 endpoint_att R1 R1-4 termination 0 0 4 total_capacity 200 available_capacity 200 unit 5
 device_endpoint R1 R1-3 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d
 endpoint_att R1 R1-3 termination 0 0 4 total_capacity 200 available_capacity 200 unit 5
+######################################################################################
 # linkid id energy operational_status forwardind_direction
 linkid R1-2_R2-1 energy 0.6 operational_status 2 fwd_direction 1
 # link endpoint context_id topology id device_id endpoint_id
@@ -20,4 +21,121 @@ link_endpoint R1-2_R2-1 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8
 link_endpoint R1-2_R2-1 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R2 R2-1
 link_capacity R1-2_R2-1 total_capacity 200 available_capacity 200 unit 5
 link_cost R1-2_R2-1 cost-name linkcost cost-value 1 cost-algorithm 0
-link_latency R1-2_R2_1 2
+link_latency R1-2_R2-1 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R1-4_R4-1 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R1-4_R4-1 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R1 R1-4
+link_endpoint R1-4_R4-1 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R4 R4-1
+link_capacity R1-4_R4-1 total_capacity 200 available_capacity 200 unit 5
+link_cost R1-4_R4-1 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R1-4_R4-1 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R1-3_R3-1 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R1-3_R3-1 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R1 R1-3
+link_endpoint R1-3_R3-1 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R3 R3-1
+link_capacity R1-3_R3-1 total_capacity 200 available_capacity 200 unit 5
+link_cost R1-3_R3-1 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R1-3_R3-1 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R2-1_R1-2 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R2-1_R1-2 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R2 R2-1
+link_endpoint R2-1_R1-2 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R1 R1-2
+link_capacity R2-1_R1-2 total_capacity 200 available_capacity 200 unit 5
+link_cost R2-1_R1-2 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R2-1_R1-2 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R2-4_R4-2 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R2-4_R4-2 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R2 R2-4
+link_endpoint R2-4_R4-2 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R4 R4-2
+link_capacity R2-4_R4-2 total_capacity 200 available_capacity 200 unit 5
+link_cost R2-4_R4-2 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R2-4_R4-2 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R4-2_R2-4 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R4-2_R2-4 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R4 R4-2
+link_endpoint R4-2_R2-4 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R2 R2-4
+link_capacity R4-2_R2-4 total_capacity 200 available_capacity 200 unit 5
+link_cost R4-2_R2-4 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R4-2_R2-4 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R4-1_R1-4 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R4-1_R1-4 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R4 R4-1
+link_endpoint R4-1_R1-4 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R1 R1-4
+link_capacity R4-1_R1-4 total_capacity 200 available_capacity 200 unit 5
+link_cost R4-1_R1-4 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R4-1_R1-4 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R4-3_R3-4 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R4-3_R3-4 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R4 R4-3
+link_endpoint R4-3_R3-4 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R3 R4-4
+link_capacity R4-3_R3-4 total_capacity 200 available_capacity 200 unit 5
+link_cost R4-3_R3-4 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R4-3_R3-4 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R4-5_R5-4 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R4-5_R5-4 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R4 R4-5
+link_endpoint R4-5_R5-4 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R5 R5-4
+link_capacity R4-5_R5-4 total_capacity 200 available_capacity 200 unit 5
+link_cost R4-5_R5-4 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R4-5_R5-4 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R5-4_R4-5 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R5-4_R4-5 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R5 R5-4
+link_endpoint R5-4_R4-5 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R4 R4-5
+link_capacity R5-4_R4-5 total_capacity 200 available_capacity 200 unit 5
+link_cost R5-4_R4-5 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R5-4_R4-5 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R5-3_R3-5 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R5-3_R3-5 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R5 R5-3
+link_endpoint R5-3_R3-5 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R3 R3-5
+link_capacity R5-3_R3-5 total_capacity 200 available_capacity 200 unit 5
+link_cost R5-3_R3-5 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R5-3_R3-5 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R3-5_R5-3 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R3-5_R5-3 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R3 R3-5
+link_endpoint R3-5_R5-3 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R5 R5-3
+link_capacity R3-5_R5-3 total_capacity 200 available_capacity 200 unit 5
+link_cost R3-5_R5-3 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R3-5_R5-3 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R3-4_R4-3 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R3-4_R4-3 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R3 R3-4
+link_endpoint R3-4_R4-3 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R4 R4-3
+link_capacity R3-4_R4-3 total_capacity 200 available_capacity 200 unit 5
+link_cost R3-4_R4-3 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R3-4_R4-3 2.0
+######################################################################################
+# linkid id energy operational_status forwardind_direction
+linkid R3-1_R1-3 energy 0.6 operational_status 2 fwd_direction 1
+# link endpoint context_id topology id device_id endpoint_id
+link_endpoint R3-1_R1-3 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R3 R3-1
+link_endpoint R3-1_R1-3 b55a05a5-ae2d-4ff3-85ca-97fac0c56f9 abf65601-a36b-496f-8e21-1708e5f96e2d R1 R1-3
+link_capacity R3-1_R1-3 total_capacity 200 available_capacity 200 unit 5
+link_cost R3-1_R1-3 cost-name linkcost cost-value 1 cost-algorithm 0
+link_latency R3-1_R1-3 2.0
