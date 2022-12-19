@@ -1,4 +1,44 @@
 {
+    "serviceList": [
+        {
+            "algId": "EAR",
+            "syncPath": "False",
+            "serviceId": {
+                "contexId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f91",
+                "service_uuid": "651550d8-46a0-4f36-9fb9-21b8e4f1b8d2"
+            },
+            "serviceType": 1,
+            "service_endpoints_ids": [
+                {
+                    "topology_id": {
+                        "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f91",
+                        "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                    },
+                    "device_id": "R1",
+                    "endpoint_uuid": "R1-A"
+                },
+                {
+                    "topology_id": {
+                        "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f91",
+                        "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                    },
+                    "device_id": "R1",
+                    "endpoint_uuid": "R5-A"
+                }
+            ],
+            "service_constraints": [
+                {
+                    "constraint_type": "bandwidth",
+                    "constraint_value": 100.0
+                },
+                {
+                    "constraint_type": "latency",
+                    "constraint_value": 20.0
+                }
+            ],
+            "kPaths": 3
+        }
+    ],
     "deviceList": [
         {
             "device_id": "R1",
@@ -13,12 +53,38 @@
                             "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
                         },
                         "device_id": "R1",
-                        "endpoint_uuid": "R1-2"
+                        "endpoint_uuid": "R1-A"
                     },
                     "endpoint_type": "termination",
                     "link_port_direction": 0,
                     "termination-direction": 0,
                     "termination-state": 4,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R1",
+                        "endpoint_uuid": "R1-2"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
                     "total-potential-capacity": {
                         "total-size": {
                             "value": 200.0,
@@ -44,7 +110,7 @@
                     "endpoint_type": "termination",
                     "link_port_direction": 0,
                     "termination-direction": 0,
-                    "termination-state": 4,
+                    "termination-state": 0,
                     "total-potential-capacity": {
                         "total-size": {
                             "value": 200.0,
@@ -70,7 +136,7 @@
                     "endpoint_type": "termination",
                     "link_port_direction": 0,
                     "termination-direction": 0,
-                    "termination-state": 4,
+                    "termination-state": 0,
                     "total-potential-capacity": {
                         "total-size": {
                             "value": 200.0,
@@ -91,28 +157,344 @@
             "device_type": "L3",
             "power_idle": 90.0,
             "operational_status": 2,
-            "device_endpoints": []
+            "device_endpoints": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R2",
+                        "endpoint_uuid": "R2-1"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R2",
+                        "endpoint_uuid": "R2-4"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                }
+            ]
         },
         {
             "device_id": "R3",
             "device_type": "L3",
             "power_idle": 90.0,
             "operational_status": 2,
-            "device_endpoints": []
+            "device_endpoints": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R3",
+                        "endpoint_uuid": "R3-1"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R3",
+                        "endpoint_uuid": "R3-4"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R3",
+                        "endpoint_uuid": "R3-5"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                }
+            ]
         },
         {
             "device_id": "R4",
             "device_type": "L3",
             "power_idle": 90.0,
             "operational_status": 2,
-            "device_endpoints": []
+            "device_endpoints": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-1"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-2"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-5"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R4",
+                        "endpoint_uuid": "R4-3"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                }
+            ]
         },
         {
             "device_id": "R5",
             "device_type": "L3",
             "power_idle": 90.0,
             "operational_status": 2,
-            "device_endpoints": []
+            "device_endpoints": [
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R5",
+                        "endpoint_uuid": "R5-A"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 4,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R5",
+                        "endpoint_uuid": "R5-4"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                },
+                {
+                    "endpoint_id": {
+                        "topology_id": {
+                            "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
+                            "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
+                        },
+                        "device_id": "R5",
+                        "endpoint_uuid": "R5-3"
+                    },
+                    "endpoint_type": "termination",
+                    "link_port_direction": 0,
+                    "termination-direction": 0,
+                    "termination-state": 0,
+                    "total-potential-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    },
+                    "available-capacity": {
+                        "total-size": {
+                            "value": 200.0,
+                            "unit": 5.0
+                        }
+                    }
+                }
+            ]
         }
     ],
     "linkList": [

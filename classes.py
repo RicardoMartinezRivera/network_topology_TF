@@ -120,7 +120,6 @@ class LinkEndpoint():
                "device_id": self.deviceId, "endpoint_uuid": self.endPointId}        
         }
 
-
 class Link():
     def __init__(self, link_Id, energy_link, operational_status, fwd_dir):
         self.link_Id = link_Id
@@ -164,10 +163,7 @@ class Link():
                 "total-potential-capacity": {"total-size": {"value": self.total_potential_capacity, "unit": self.unit}}, 
                 "available-capacity": {"total-size": {"value": self.available_capacity, "unit": self.unit}}, 
                 "cost-characteristics": {"cost-name": self.costName, "cost-value": self.costValue, "cost-algorithm": self.costAlg},
-                "latency_characteristics": {"fixed-latency-characteristics": self.latency}        
-                }
-
-
+                "latency_characteristics": {"fixed-latency-characteristics": self.latency}}
 class LinkList():
     def __init__(self):
         self.links = []
@@ -184,3 +180,79 @@ class LinkList():
 
     def to_json(self):
         return[link.to_json() for link in self.links]
+
+class ServiceId():
+    def __init__(self, contextId, service_uuid):
+        self.contextId = contextId
+        self.service_uuid = service_uuid
+
+    def to_json(self):
+        return{"contexId": self.contextId,
+                "service_uuid": self.service_uuid}
+
+class ServiceEndpoint():
+    def __init__(self):
+        contextId = ""
+        topology_uuid = ""
+        device_id = ""
+        endpoint_uuid = ""
+
+    def add_context_topology(self, contextId, topology_uuid):
+        self.contextId = contextId
+        self.topology_uuid = topology_uuid
+
+    def add_device_endpoint(self, device_id, endpoint_uuid):
+        self.device_id = device_id
+        self.endpoint_uuid = endpoint_uuid
+
+    def to_json(self):
+        return{"topology_id": {"contextId": self.contextId,
+        "topology_uuid": self.topology_uuid}, "device_id": self.device_id, "endpoint_uuid": self.endpoint_uuid}
+
+class Service(ServiceId):
+    def __init__(self, contextId, service_uuid):
+        super().__init__(contextId, service_uuid)
+        self.algId = ""
+        self.syncPaths = ""
+        self.type = 0
+        self.endpoints_ids = []
+        self.bandwidth = 0.0
+        self.latency = 0.0
+        self.kpaths = 0
+
+    def add_serv_att(self, algId, syncPaths, type):
+        self.algId = algId
+        self.syncPaths = syncPaths
+        self.type = type
+
+    def add_endpoint_id(self, serviceEndpoint):
+        self.endpoints_ids.append(serviceEndpoint)
+
+    def add_serv_args(self, bandwidth, latency, kpaths):
+        self.bandwidth = bandwidth
+        self.latency = latency
+        self.kpaths = kpaths
+
+    def to_json(self):
+        return {"algId": self.algId, "syncPath": self.syncPaths,
+                "serviceId": super().to_json(), "serviceType": self.type, 
+                "service_endpoints_ids": [service_endpoint.to_json() for service_endpoint in self.endpoints_ids], 
+                "service_constraints": [{"constraint_type": "bandwidth", "constraint_value": self.bandwidth}, 
+                {"constraint_type": "latency", "constraint_value": self.latency}],
+                "kPaths": self.kpaths}    
+
+class ServiceList():
+    def __init__(self):
+        self.services = []
+    
+    def add(self, service):
+        self.services.append(service)
+
+    def get(self, id):
+        for i,s in enumerate(self.services):
+            if s.service_uuid == id:
+                return s
+        return None
+    
+    def to_json(self):
+        return[service.to_json() for service in self.services]
