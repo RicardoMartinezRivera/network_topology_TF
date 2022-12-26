@@ -101,7 +101,7 @@ def  link_cost_add(cmd):
     if l == None:
         print("LinkId: {} DOES NOT EXIST...".format(cmd[1]))
     else:
-        l.add_cost(str(cmd[3]), float(cmd[5]), float(cmd[7]))
+        l.add_cost(str(cmd[3]), str(cmd[5]), str(cmd[7]))
 
 def link_latency_add(cmd):
     # get the link by its id; if it does not exist, then ignore the command
@@ -134,7 +134,7 @@ def service_args_add(cmd):
         print("Service_id: {} is NOT found".format(str(cmd[1])))
     else:
         print("bandwidth: {}; latency: {}, kPaths: {}".format(float(cmd[3]), float(cmd[5]), int(cmd[7])))
-        s.add_serv_args(float(cmd[3]), float(cmd[5]), int(cmd[7]))        
+        s.add_serv_args(str(cmd[3]), str(cmd[5]), int(cmd[7]))        
 
 def process_line(l):
     cmd = l.split()

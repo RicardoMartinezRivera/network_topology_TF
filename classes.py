@@ -131,9 +131,9 @@ class Link():
         self.available_capacity = float(0)
         self.unit = int(0)
         self.costName = ""
-        self.costValue = float(0)
-        self.costAlg = float(0)
-        self.latency = float(0)
+        self.costValue = ""
+        self.costAlg = ""
+        self.latency = ""
 
     def __repr__(self) -> str:
         return "{} {} {} {}".format(self.link_Id, self.energy_link, self.operational_status, self.fwd_dir)
@@ -163,7 +163,7 @@ class Link():
                 "total-potential-capacity": {"total-size": {"value": self.total_potential_capacity, "unit": self.unit}}, 
                 "available-capacity": {"total-size": {"value": self.available_capacity, "unit": self.unit}}, 
                 "cost-characteristics": {"cost-name": self.costName, "cost-value": self.costValue, "cost-algorithm": self.costAlg},
-                "latency_characteristics": {"fixed-latency-characteristics": self.latency}}
+                "latency-characteristics": {"fixed-latency-characteristic": self.latency}}
 class LinkList():
     def __init__(self):
         self.links = []
@@ -187,7 +187,7 @@ class ServiceId():
         self.service_uuid = service_uuid
 
     def to_json(self):
-        return{"contexId": self.contextId,
+        return{"contextId": self.contextId,
                 "service_uuid": self.service_uuid}
 
 class ServiceEndpoint():

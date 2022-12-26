@@ -4,7 +4,7 @@
             "algId": "EAR",
             "syncPath": "False",
             "serviceId": {
-                "contexId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f91",
+                "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f9",
                 "service_uuid": "651550d8-46a0-4f36-9fb9-21b8e4f1b8d2"
             },
             "serviceType": 1,
@@ -22,18 +22,18 @@
                         "contextId": "b55a05a5-ae2d-4ff3-85ca-97fac0c56f91",
                         "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
                     },
-                    "device_id": "R1",
+                    "device_id": "R5",
                     "endpoint_uuid": "R5-A"
                 }
             ],
             "service_constraints": [
                 {
                     "constraint_type": "bandwidth",
-                    "constraint_value": 100.0
+                    "constraint_value": "100"
                 },
                 {
                     "constraint_type": "latency",
-                    "constraint_value": 20.0
+                    "constraint_value": "20"
                 }
             ],
             "kPaths": 3
@@ -539,11 +539,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -587,11 +587,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -635,11 +635,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -683,11 +683,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -731,11 +731,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -779,11 +779,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -827,11 +827,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -856,7 +856,7 @@
                             "topology_uuid": "abf65601-a36b-496f-8e21-1708e5f96e2d"
                         },
                         "device_id": "R3",
-                        "endpoint_uuid": "R4-4"
+                        "endpoint_uuid": "R3-4"
                     }
                 }
             ],
@@ -875,11 +875,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -923,11 +923,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -971,11 +971,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -1019,11 +1019,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -1067,11 +1067,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -1115,11 +1115,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         },
         {
@@ -1163,11 +1163,11 @@
             },
             "cost-characteristics": {
                 "cost-name": "linkcost",
-                "cost-value": 1.0,
-                "cost-algorithm": 0.0
+                "cost-value": "1",
+                "cost-algorithm": "0"
             },
-            "latency_characteristics": {
-                "fixed-latency-characteristics": "2.0"
+            "latency-characteristics": {
+                "fixed-latency-characteristic": "2.0"
             }
         }
     ]
